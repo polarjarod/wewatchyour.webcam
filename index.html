@@ -1,0 +1,142 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+    	<title>TestCreator Dev logs</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.css"/>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/sticky.js"></script>
+	
+	
+	</head>
+	<body>
+	
+		<div class="ui raised green center aligned top attached segment">
+			<div class="negative ui animated button" onclick="location.href='#bottom'">
+    			<div class="visible content">To latest Post</div>
+    			<div class="hidden content">
+    				<i class="down arrow icon"></i>
+    			</div>
+    		</div>
+    	</div>
+		
+
+		<div class="ui black inverted attached segment">
+
+		
+			<!-- <div class="ui right close rail">
+					<div class="ui container">
+					
+						<div class="positive ui animated button" onclick="location.href='#top'">
+    						<div class="visible content">To latest Post</div>
+    						<div class="hidden content">
+    							<i class="up arrow icon"></i>
+    						</div>
+    					</div>
+    				
+					</div>
+			</div>
+   -->
+
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 1</h1>
+  			<p>
+  				Our primary focus was deciding how to typeset the outputted documents, after we decided on LaTeX, we spent the remainder of the week working on the project proposal.
+  			</p>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 2</h1>
+  			<p>
+  				We worked on deciding which LaTeX distribution we would be using, which was determined off of: how lightweight it was, that it had all the neccessary features (Math, images, tables, charts),
+  				and that it would work well from command line. After this we started actually learning LaTeX and outlining project goals.
+  			</p>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 3</h1>
+  			<p>
+  				We spent more time learning some basic LaTeX, we started on the Java component, delineating two packages, the main package, which we started by implementing the main run class, and created the TexWriter and PDFWriter threads, and the gui package, which is empty. 
+  			</p>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 4</h1>
+  			<p>
+  				We worked to learn how to execute an argument from the command line in Java, found two solutions, the processBuilder and Runtime.exec, we attempted implementing both solutions, but neither were working at first. In the meantime, we made progress on the actual code within the threads, rather than just initialization methods.
+  			</p>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 5 </h1>
+  			<p>
+  				Finally got the command line argument to work, and we implemented it so that we can compile a .tex file into a pdf, which ended development on the PDFWriter thread. We also made the TexWriter thread actually create a .tex file, we had to implement a Semaphore to restrict access to the resources, so that PDFWriter does not attempt to compile an incomplete .tex file.
+  			</p>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 6</h1>
+  			<p>
+  				We finally removed a bug from TexWriter concerning the formatting of the .tex file, and we changed it so that it reads input from a buffer, which prompted the creation of the third package, Buffers, this completes development of TexWriter, and, hopefully, of the main package until we add in extra symbols(which may be done in a seperate parsing class, perhaps even a package) or, the inclusion of photo adding features(which may als be completed in either a parsing package or as a GUI frontend process). 
+  			</p>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 7</h1>
+  			<p>
+  				Began work on a basic GUI, which will run on a single thread, as of the end of the week, it is far from complete, but has a working file chooser for the location of the output pdf. We spent a lot of time on reworking our GUI design, and have a better plan, where the user adds sections, which are of a type(MC, T/F, SAQ, attached media), and they open within a larger editing window, once the user finishs with all the sections, they will be parsed and added to the buffer for TeXWriter to format and compile, then PDFWriter will create the .pdf.
+  			</p>
+		</div>
+
+		<a name="bottom"></a>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui raised very padded text container segment">
+  			<h1 class="ui header">Week 8</h1>
+  			<p>
+  				<b>We finally have the blog online, and will now have new updates by day, this top section will be used for goals. The goals for this week will be to adjust the Buffer, get some progress on the GUI, and actually link the GUI to the main process.</b>
+  			</p>
+  			<h7 class="ui header">Day 1</h7>
+  			<p>
+  				
+  			</p>
+		</div>
+
+
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+	
+		
+    	
+		</div>
+			<div class="ui center aligned bottom attached segment">
+			<div class="positive ui animated button" onclick="location.href='#top'">
+    			<div class="visible content">To Top Post</div>
+    			<div class="hidden content">
+    				<i class="up arrow icon"></i>
+    			</div>
+    		</div>
+    	</div>
+	</body>
+
+</html>
