@@ -7,10 +7,27 @@
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/sticky.js"></script>
-		<!-- this script got from www.javascriptfreecode.com-Coded by: Krishna Eydatoula -->
+		
+	</head>
+	<body>
+	
+		<div class="ui raised green center aligned top attached segment">
+			<div class="negative ui animated button" onclick="location.href='#bottom'">
+    			<div class="visible content">To latest Post</div>
+    			<div class="hidden content">
+    				<i class="down arrow icon"></i>
+    			</div>
+    		</div>
+    	</div>
+		
+
+		<div class="ui black inverted attached segment">
+
+		
+			<!-- this script got from www.javascriptfreecode.com-Coded by: Krishna Eydatoula -->
 		<script>
 		// Set the number of snowflakes (more than 30 - 40 not recommended)
-		var snowmax=35
+		var snowmax=500
 
 		// Set the colors for the snow. Add as many colors as you like
 		var snowcolor=new Array("#aaaacc","#ddddFF","#ccccDD")
@@ -22,10 +39,10 @@
 		var snowletter="*"
 
 		// Set the speed of sinking (recommended values range from 0.3 to 2)
-		var sinkspeed=0.6
+		var sinkspeed=2
 
 		// Set the maximal-size of your snowflaxes
-		var snowmaxsize=22
+		var snowmaxsize=50
 
 		// Set the minimal-size of your snowflaxes
 		var snowminsize=8
@@ -33,7 +50,7 @@
 		// Set the snowing-zone
 		// Set 1 for all-over-snowing, set 2 for left-side-snowing 
 		// Set 3 for center-snowing, set 4 for right-side-snowing
-		var snowingzone=3
+		var snowingzone=1
 
 		///////////////////////////////////////////////////////////////////////////
 		// CONFIGURATION ENDS HERE
@@ -66,7 +83,7 @@
 				marginright = document.body.clientWidth
 			}
 			else if (ns6) {
-				marginbottom = window.innerHeight
+				marginbottom = window.innerHeight *6.5
 				marginright = window.innerWidth
 			}
 			var snowsizerange=snowmaxsize-snowminsize
@@ -117,22 +134,8 @@
 		}
 		</script>
 
-	</head>
-	<body>
-	
-		<div class="ui raised green center aligned top attached segment">
-			<div class="negative ui animated button" onclick="location.href='#bottom'">
-    			<div class="visible content">To latest Post</div>
-    			<div class="hidden content">
-    				<i class="down arrow icon"></i>
-    			</div>
-    		</div>
-    	</div>
-		
 
-		<div class="ui black inverted attached segment">
 
-		
 			<!-- <div class="ui right close rail">
 					<div class="ui container">
 					
@@ -304,6 +307,8 @@
 				We looked into advanced components and are hoping to begin implementation next week.
 			</p>
 		</div>
+
+		<div class="ui hidden divider"></div>
 		
 		<div class="ui raised very padded text container segment">
   			<h1 class="ui header">Week 11</h1>
@@ -332,7 +337,7 @@
 			</p>
 		</div>
 		
-			
+			<div class="ui hidden divider"></div>
 		
 		<div class="ui raised very padded text container segment">
   			<h1 class="ui header">Week 12</h1>
@@ -361,7 +366,7 @@
 			</p>
 		</div>
 
-		
+		<div class="ui hidden divider"></div>
 			
 		<div class="ui raised very padded text container segment">
   			<h1 class="ui header">Week 13</h1>
@@ -390,6 +395,7 @@
 			</p>
 		</div>
 		
+		<div class="ui hidden divider"></div>
 		<a name="bottom"></a>	
 			
 		<div class="ui raised very padded text container segment">
