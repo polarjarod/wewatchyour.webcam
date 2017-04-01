@@ -48,286 +48,88 @@
 
 		<div class="ui hidden divider"></div>
 
+	
 		<div class="ui raised very padded text container segment">
   			<h1 class="ui header">Week 1</h1>
   			<p>
-  				Our primary focus was deciding how to typeset the outputted documents, after we decided on LaTeX, we spent the remainder of the week working on the project proposal.
+  				<b>We worked on formulating goals following the regional competition, and deciding on what features we wanted to add in</b>
   			</p>
+  			<h7 class="ui header">Day 1</h7>
+  			<p>
+  				Work on file upload 
+  			</p>
+			<h7 class="ui header">Day 2</h7>
+			<p>
+				Work on Image upload
+			</p>
+			<h7 class="ui header">Day 3</h7>
+			<p>
+				Image sending added to messaging, works most of time
+			</p>
+			<h7 class="ui header">Day 4</h7>
+			<p>
+				Image sending is working better, but things do not scale
+			</p>
+			<h7 class="ui header">Day 5</h7>
+			<p>
+				Testing on images, more bugs found	
+			</p>
 		</div>
-
-		<div class="ui hidden divider"></div>
-
+			
 		<div class="ui raised very padded text container segment">
   			<h1 class="ui header">Week 2</h1>
   			<p>
-  				We worked on deciding which LaTeX distribution we would be using, which was determined off of: how lightweight it was, that it had all the neccessary features (Math, images, tables, charts),
-  				and that it would work well from command line. After this we started actually learning LaTeX and outlining project goals.
+  				<b>We worked on furthering support and finalizing the image sending functionality.</b>
   			</p>
+  			<h7 class="ui header">Day 1</h7>
+  			<p>
+  				Research performed, images will auto scale if bounds are set using CSS5
+  			</p>
+			<h7 class="ui header">Day 2</h7>
+			<p>
+				work on implementing the proper CSS protocol, and discuss later additions for the project
+			</p>
+			<h7 class="ui header">Day 3</h7>
+			<p>
+				Implemented image, wondering about issues of aspect ratio mutilation
+			</p>
+			<h7 class="ui header">Day 4</h7>
+			<p>
+				decided we should formulate a proper presentation for State, discuss possible resources
+			</p>
+			<h7 class="ui header">Day 5</h7>
+			<p>
+				Decide the ease of use and deployment options of .ppt is the best option	
+			</p>
 		</div>
-
-		<div class="ui hidden divider"></div>
-
+			
 		<div class="ui raised very padded text container segment">
   			<h1 class="ui header">Week 3</h1>
   			<p>
-  				We spent more time learning some basic LaTeX, we started on the Java component, delineating two packages, the main package, which we started by implementing the main run class, and created the TexWriter and PDFWriter threads, and the gui package, which is empty. 
-  			</p>
-		</div>
-
-		<div class="ui hidden divider"></div>
-
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 4</h1>
-  			<p>
-  				We worked to learn how to execute an argument from the command line in Java, found two solutions, the processBuilder and Runtime.exec, we attempted implementing both solutions, but neither were working at first. In the meantime, we made progress on the actual code within the threads, rather than just initialization methods.
-  			</p>
-		</div>
-
-		<div class="ui hidden divider"></div>
-
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 5 </h1>
-  			<p>
-  				Finally got the command line argument to work, and we implemented it so that we can compile a .tex file into a pdf, which ended development on the PDFWriter thread. We also made the TexWriter thread actually create a .tex file, we had to implement a Semaphore to restrict access to the resources, so that PDFWriter does not attempt to compile an incomplete .tex file.
-  			</p>
-		</div>
-
-		<div class="ui hidden divider"></div>
-
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 6</h1>
-  			<p>
-  				We finally removed a bug from TexWriter concerning the formatting of the .tex file, and we changed it so that it reads input from a buffer, which prompted the creation of the third package, Buffers, this completes development of TexWriter, and, hopefully, of the main package until we add in extra symbols(which may be done in a seperate parsing class, perhaps even a package) or, the inclusion of photo adding features(which may als be completed in either a parsing package or as a GUI frontend process). 
-  			</p>
-		</div>
-
-		<div class="ui hidden divider"></div>
-
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 7</h1>
-  			<p>
-  				Began work on a basic GUI, which will run on a single thread, as of the end of the week, it is far from complete, but has a working file chooser for the location of the output pdf. We spent a lot of time on reworking our GUI design, and have a better plan, where the user adds sections, which are of a type(MC, T/F, SAQ, attached media), and they open within a larger editing window, once the user finishs with all the sections, they will be parsed and added to the buffer for TeXWriter to format and compile, then PDFWriter will create the .pdf.
-  			</p>
-		</div>
-
-		
-		<div class="ui hidden divider"></div>
-
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 8</h1>
-  			<p>
-  				<b>We finally have the blog online, and will now have new updates by day, this top section will be used for goals. The goals for this week will be to adjust the Buffer, get some progress on the GUI, and actually link the GUI to the main process.</b>
+  				<b>Work on updating blog post, resume, and beginning the presentation. We also worked on bug fixes, including removing the broken and incomplete parts.</b>
   			</p>
   			<h7 class="ui header">Day 1</h7>
   			<p>
-  				Looked at the GUI, we ultimately decided that Swing lacked features, particularly styling, and a sleek, easy to use design. We have decided to look at new options. 
+  				Updating blogs for the last week
   			</p>
 			<h7 class="ui header">Day 2</h7>
 			<p>
-				We have decided that JavaFX will give us the most flexibility, and many of the stylesheets are to our liking.
+				Removed the Dark Mode feature, which was never finished
 			</p>
 			<h7 class="ui header">Day 3</h7>
 			<p>
-				PSAT testing, nothing done
+				Scheduling things for TSA
 			</p>
 			<h7 class="ui header">Day 4</h7>
 			<p>
-				Spent time working on tutorials, but Nick spent time watching Ferrari engine sounds and eating, while I updated the blog posts for the week.
+				Began the formatting and text for the presentation
 			</p>
 			<h7 class="ui header">Day 5</h7>
 			<p>
-				We spent time learning JavaFX and removing the old UI, most of the time was spent following online tutorials.	
+					
 			</p>
 		</div>
 			
-			
-		
-			
-		<div class="ui hidden divider"></div>
-
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 9</h1>
-  			<p>
-  				<b>Learning about and how JavaFX would be implemented in our project.</b>
-  			</p>
-  			<h7 class="ui header">Day 1</h7>
-  			<p>
-				Working on more advanced tutorial for JavaFX, to learn about more complex components.
-			</p>
-			<h7 class="ui header">Day 2</h7>
-			<p>
-				Worked on learning interactive components, such as buttons.
-			</p>
-			<h7 class="ui header">Day 3</h7>
-			<p>
-				Got hung up because of some strange versioning differences between the tutorial and the latest JavaFX.
-			</p>
-			<h7 class="ui header">Day 4</h7>
-			<p>
-				We discussed beginning implementation, however, we are interested in having a good implementation, and due to the complexity of interalacing certain components, we opted for working on more advanced tutorials, particularly concerning components such as menus and ui scaling, also we want to have decent multi-platform compatibility.
-			</p>
-			<h7 class="ui header">Day 5</h7>
-			<p>
-				We looked into the aforementioned components
-			</p>
-		</div>
-			
-		
-		
-			<div class="ui hidden divider"></div>
-
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 10</h1>
-  			<p>
-  				<b>our goal is to finish learing of JavaFX to a level adequate enough for a proper implementation.</b>
-  			</p>
-  			<h7 class="ui header">Day 1</h7>
-  			<p>
-				At Webb Elementary.
-			</p>
-			<h7 class="ui header">Day 2</h7>
-			<p>
-				Worked on getting farther into tutorials, then CJ decided to delete it...... We decided to start a different turorial.
-			</p>
-			<h7 class="ui header">Day 3</h7>
-			<p>
-				At Webb Elementary.	
-			</p>
-			<h7 class="ui header">Day 4</h7>
-			<p>
-				Worked on finding a new tutorial and getting some work done.
-			</p>
-			<h7 class="ui header">Day 5</h7>
-			<p>
-				We looked into advanced components and are hoping to begin implementation next week.
-			</p>
-		</div>
-
-		<div class="ui hidden divider"></div>
-		
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 11</h1>
-  			<p>
-  				<b>Our group's goal is to begin working on the gui and a the methods to transferuser input into the LaTeX format.</b>
-  			</p>
-  			<h7 class="ui header">Day 1</h7>
-  			<p>
-				Worked on paper to design a design conducive to our project.
-			</p>
-			<h7 class="ui header">Day 2</h7>
-			<p>
-				We continued to layout our design, we are currently leaning towards something utilizing multiple windows.
-			</p>
-			<h7 class="ui header">Day 3</h7>
-			<p>
-				Started to do some early stages of gui work, then decided to change our design direction to something that instead utilizes a tab pane.	
-			</p>
-			<h7 class="ui header">Day 4</h7>
-			<p>
-				After looking at built in JavaFX classes, we have decided that our project should follow that methodology and be somewhat like a MS product.
-			</p>
-			<h7 class="ui header">Day 5</h7>
-			<p>
-				Are hoping to begin implementation next week.
-			</p>
-		</div>
-		
-			<div class="ui hidden divider"></div>
-		
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 12</h1>
-  			<p>
-  				<b>Would like to get a demo of the gui up and running.</b>
-  			</p>
-  			<h7 class="ui header">Day 1</h7>
-  			<p>
-				Did a really simple splashcreen.
-			</p>
-			<h7 class="ui header">Day 2</h7>
-			<p>
-				Troubleshooting a scenebuilder issue, wherein one can only have two tabs in a tab pane.
-			</p>
-			<h7 class="ui header">Day 3</h7>
-			<p>
-				Trying to work out that issue, program crashes adding tabs.	
-			</p>
-			<h7 class="ui header">Day 4</h7>
-			<p>
-				Discovered tabs MUST be added manually to the fxml file, and cannot be altered in scenebuilder :(.
-			</p>
-			<h7 class="ui header">Day 5</h7>
-			<p>
-				Worked on creating a text field for a manual mode used for demo and perhaps some pros after release.
-			</p>
-		</div>
-
-		<div class="ui hidden divider"></div>
-			
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 13</h1>
-  			<p>
-  				<b>Working on formulating a gui to work with the program.</b>
-  			</p>
-  			<h7 class="ui header">Day 1</h7>
-  			<p>
-				Decided to begin development of a manual entry mode for LaTeX code, so that we have a demo.
-			</p>
-			<h7 class="ui header">Day 2</h7>
-			<p>
-				Created the checkbox and started development of a new scene for manual entry.
-			</p>
-			<h7 class="ui header">Day 3</h7>
-			<p>
-				We have created a box and a javaFX text area which appears on the new scene activated by the checkbox and assigned fx;ids so that the controller can access them.	
-			</p>
-			<h7 class="ui header">Day 4</h7>
-			<p>
-				We created a method wherein, with the manual entry scene, the button for compile and submit will write the LaTeX to a buffer for the TeXWriter thread to access. Error on running.
-			</p>
-			<h7 class="ui header">Day 5</h7>
-			<p>
-				Fixed error because gui was missing a default constructor, though the pdf compiles only after the window is closed.
-			</p>
-		</div>
-		
-		<div class="ui hidden divider"></div>
-		<a name="bottom"></a>	
-			
-		<div class="ui raised very padded text container segment">
-  			<h1 class="ui header">Week 14</h1>
-  			<p>
-  				<b>Finals week, will work on cleaning up a demo.</b>
-  			</p>
-  			<h7 class="ui header">Day 1</h7>
-  			<p>
-				Trying to fix the issue of window closing to make the pdf.
-			</p>
-			<h7 class="ui header">Day 2</h7>
-			<p>
-				short class, seeing if we can add in some buttons to better show our gui goals.
-			</p>
-			<h7 class="ui header">Day 3</h7>
-			<p>
-				Presenting to class for mid-semester review.
-			</p>
-		</div>
-			
-		<div class="ui hidden divider"></div>
-		<div class="ui hidden divider"></div>
-		<div class="ui hidden divider"></div>
-		<div class="ui hidden divider"></div>
-		<div class="ui hidden divider"></div>
-	
-		
-    	
-		</div>
-			<div class="ui center aligned bottom attached segment">
-			<div class="positive ui animated button" onclick="location.href='#top'">
-    			<div class="visible content">To Top Post</div>
-    			<div class="hidden content">
-    				<i class="up arrow icon"></i>
-    			</div>
-    		</div>
     	</div>
 	</body>
 
